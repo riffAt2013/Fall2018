@@ -1,5 +1,3 @@
-
-//https://www.hackerrank.com/challenges/staircase/problem
 #include <bits/stdc++.h>
 using namespace std;
 
