@@ -1,18 +1,19 @@
 #w/o GUI TTC example
-import pprint
 board =  {'top-left':' ','top-middle':' ', 'top-right':' ', 
          'mid-left':' ', 'mid-middle':' ', 'mid-right':' ', 
          'bottom-left':' ', 'bottom-middle':' ', 'bottom-right':' '}
 
-def boardPrinted(board):
+def boardPrinted(board):	
+	
     print(board['top-left']+ '|'+ board['top-middle']+ '|'+ board['top-right'])
     print('-----')
     print(board['mid-left']+ '|'+ board['mid-middle']+ '|'+ board['mid-right'])
     print('-----')
     print(board['bottom-left']+ '|'+ board['bottom-middle']+ '|'+ board['bottom-right'])
+    print('\n')
 
 print ('Welcome to my TIC_TAC_TOE game.')
-print('Player One choose your weapon: X or O')
+print('Player One choose your weapon: X or O\n')
 choice = input()
 
 if choice == 'X':
@@ -40,8 +41,8 @@ while True:
     if count == 9:
         break
     
-    print('Final Outcome: ')
-    boardPrinted(board)
+print('Final Outcome: ')
+boardPrinted(board)
     
     
 
