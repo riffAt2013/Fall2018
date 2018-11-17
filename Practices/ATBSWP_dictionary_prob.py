@@ -15,10 +15,10 @@ def disp(dic):
 def addInv (inv, loot):
 	for i in loot:
 		if i in inv.keys():
-			inv.setdefault(i, inv[i])
+			inv.setdefault(i, inv[i])   #If item exists, start incrementing from its pre-existing values
 			inv[i] += 1
 		else:
-			inv.setdefault(i, 0)
+			inv.setdefault(i, 0)    #If item doesn't exist, start incrementing from 0
 			inv[i] += 1
 	return inv
 
